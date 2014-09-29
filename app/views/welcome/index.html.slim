@@ -1,21 +1,23 @@
 #siteWrapper
-  #header
-    .header-inner
-      #logoWrapper
-        = image_tag "logo.png"
-      #headerNav
-        nav data-content-field="navigation-mainNav"
-          ul.list-layout
-            li
-              a href="" Perks
-            li
-              a href="" For Merchants
-            li
-              a href="" Login
-  #content
-    h4 Building Employee Happiness
-    h1 STARTS WITH YOU
-    a href="" REQUEST A FREE DEMO
+  .background
+    #header.container
+      .header-inner
+        #logoWrapper
+          a href= "/"
+            = image_tag "logo.png"
+        #headerNav
+          nav data-content-field="navigation-mainNav"
+            ul.list-layout
+              li
+                a href="" Perks
+              li
+                a href="" For Merchants
+              li
+                a href="" Login
+    #content
+      h4 Building Employee Happiness
+      h1 STARTS WITH YOU
+      a href="/demo" REQUEST A FREE DEMO
   .container
     .features.col-md-4.col-sm-12
       =image_tag "star.png"
@@ -32,3 +34,26 @@
 
       h3 Easily Customizable
       p Customize your platform and perks that best suits your team.
+  section.light-gray
+    .container
+      .for-whom
+        .row
+          .col-md-5.col-md-offset-1.col-sm-6.col-xs-12
+            h3 For Employers
+            p
+              | Looking to increase productivity and employee happiness in your workplace? Save money and reward your employees with exclusive suite of corporate perks customized to your staff's lifestyle and culture.
+              | Say goodbye to convoluted spreadsheets. Say hello to employee perk management done right.
+          .col-md-5.col-md-offset-1.col-sm-5.col-sm-offset-1.col-xs-12
+            =image_tag "employer.png", :class=> "employer-image"
+
+        .row
+          .col-md-5.col-md-offset-1.col-sm-6.col-xs-12
+            =image_tag "building-graph-new.png", :class=> "employer-image"
+
+          .col-md-5.col-md-offset-1.col-sm-6.col-xs-12
+            h3.add-margin-top For Merchants
+            p Tired of paying for expensive ads with low conversion rates? Grow your revenue with targeted advertisements and data you can understand. Offer your discounts to people you care about and know what they really want.
+
+footer
+  .container#content
+    a href="/demo" REQUEST A FREE DEMO

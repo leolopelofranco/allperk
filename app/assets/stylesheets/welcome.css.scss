@@ -24,12 +24,15 @@ body {
   font-weight: 400;
   font-style: normal;
   color: rgba(26,26,26,.7);
-  background-image: image-url('background.jpg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative;
+
 }
 
+.background {
+  background-image: image-url('background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
 #header {
   width: 100%;
   padding: 0 20px;
@@ -67,6 +70,11 @@ body {
     font-style: normal;
     line-height: 1em;
     color: #fff;
+  }
+
+  a:hover {
+    border-bottom: 4px solid #FEDE62;
+    padding-bottom: 10px;
   }
 }
 
@@ -108,6 +116,7 @@ body {
     letter-spacing: 4px;
     font-weight: 700;
     margin-top: 0;
+    margin-bottom: 5vw;
   }
 
   a {
@@ -155,4 +164,159 @@ body {
     max-width: 340px;
     float: right;
   }
+}
+
+.light-gray {
+  background-color: #F7F7F7;
+  border-bottom: solid 1px #dadfe1;
+  border-top: solid 1px #dadfe1;
+}
+
+.for-whom {
+  padding-bottom: 8.8%;
+  padding-top: 6.1%;
+  min-height: 620px;
+
+  p {
+    font-family: Open Sans;
+    font-weight: 200;
+    color: black;
+  }
+
+}
+.employer-image {
+    margin-bottom: 60px;
+    max-width: 100%;
+}
+
+.add-margin-top {
+  margin-top: 8vw;
+}
+
+footer {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: normal;
+    color: #7f8c8d;
+  }
+  li {
+    display: inline-block;
+    color: white;
+  }
+}
+
+footer {
+
+  background-color: #2C3E50;
+  #content {
+    padding: 50px;
+  }
+}
+
+
+.employer-form {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 280px;
+  max-width: 420px;
+  width: 87.5%;
+
+  .border-radius-form {
+    @include border-radius(3px);
+  }
+
+  .white-background {
+    @include border-radius(3px);
+  }
+
+  .full-width {
+    width: 100% !important;
+  }
+
+  label {
+    height: 70px !important;
+    width: 50% !important;
+  }
+
+  .background-image {
+    background-attachment: fixed;
+    background-image: image-url('building-graph.png') !important;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .border-right {
+    border-right: 1px solid #eee;
+  }
+
+  .white-background {
+    background-color: #fdfdfd;
+    opacity: .9;
+  }
+
+  label {
+    border-bottom: 1px solid #eee;
+    color: #95a0a5;
+    cursor: text;
+    display: inline-block;
+    height: 85px;
+    margin-bottom: 0;
+    width: 220px;
+  }
+
+  span {
+    color: #95a0a5;
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 12px 0 0 14px;
+    text-indent: 1px;
+    text-transform: uppercase;
+  }
+
+  input {
+    background: transparent;
+    border: 0;
+    color: #242a33;
+    font-size: 15px;
+    font-weight: 300;
+    margin: 9px 0 0 14px;
+    outline: none;
+  }
+
+  .full-width {
+    width: 100%;
+  }
+
+  .solid-btn {
+    @include border-radius(0 0 3px 3px);
+    background: #fc0;
+    border: 0;
+    border-bottom: 4px solid #f4b700;
+    color: #fdfdfd;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    height: 66px;
+    line-height: 66px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    text-shadow: 0 1px 1px #d6a000;
+    text-transform: uppercase;
+    width: 100%;
+  }
+}
+
+.color {
+  background-color: #2C3E50;
+}
+
+.add-margin-bottom {
+  margin-bottom: 8vw;
 }
